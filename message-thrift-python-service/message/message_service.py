@@ -1,3 +1,10 @@
+# 在代码中引入了其他文件的包（自己写的包，非 pip 安装的），问题出在 import 那行语句。
+# 错误的原因是因为路径的原因，服务器端的路径和我们本地的路径不一样显示。
+import sys
+import os
+sys.path.append(os.path.dirname(sys.path[0]))
+
+
 from message.api import MessageService
 from thrift.transport import TSocket
 from thrift.transport import TTransport
