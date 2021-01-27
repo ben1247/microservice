@@ -16,4 +16,4 @@
 # 用户微服务 edge service
 # 课程微服务 edge service
 # API GATEWAY
-
+- 访问地址：http://127.0.0.1:8080/course/courseList?token=h19wbssvv
